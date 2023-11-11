@@ -2,33 +2,21 @@
 
 
 
-
-/*Console.WriteLine("Hello, World!");
-byte a = 6;
-Console.WriteLine("write the number");
-int b = int.Parse(Console.ReadLine());
-int c = a + b;
-
-
-Console.WriteLine("Value = " + c );
-var intMin = int.MinValue;
-*/
+//Task 1 - Write a C# program that takes three letters as input and display them in reverse order.
 
 
 Console.WriteLine("Input the first letter");
 string Letters1 = Console.ReadLine();
+
 Console.WriteLine("Input the second letter");
 string Letters2 = Console.ReadLine();
+
 Console.WriteLine("Input the third letter");
 string Letters3 = Console.ReadLine();
 
 Console.WriteLine("Your reversed letters is:");
 
-Console.WriteLine(Letters3
-    );
-Console.WriteLine(Letters2
-    );
-Console.WriteLine(Letters1
-    );
-
+Console.WriteLine(Letters3);
+Console.WriteLine(Letters2);
+Console.WriteLine(Letters1);
 
