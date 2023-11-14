@@ -1,6 +1,6 @@
 ﻿
 
-
+  
 //LESSON 4
 //Task 1 - Write a C# that calculates the day of week (ex: Monday) of your birthday
 
@@ -94,7 +94,7 @@ catch
 
 
 
-/*
+ /*
   Task 6 - Write a program in C# Sharp to find the last day of a week against a given date. Test Data:
 Input the Day : 16
 Input the Month : 06
@@ -102,7 +102,7 @@ Input the Year : 2016
 
 Expected Output :
 The formatted Date is : 16 / 06 / 2016 The last day of the week for the above date is: 18 / 06 / 2016
-*/
+ */
 
 
 Console.WriteLine("#### - Program for to find the last day of a week against a given date");
@@ -219,6 +219,75 @@ try
 catch
 {
     Console.WriteLine("Please restart the program and enter number only");
+}
+  
+
+//Task 8 - Write a program in C# Sharp which is a Menu-Driven Program to perform a simple calculation
+
+double first;
+double second;
+double result;
+
+
+Console.WriteLine("#### - Program for two number calcutaion");
+try
+{
+    Console.WriteLine("Enter the first number");
+    first = double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Enter the second number");
+    second = double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Choose the number of operation:");
+    Console.WriteLine("1 - Addition");
+    Console.WriteLine("2 - Substraction");
+    Console.WriteLine("3 - Multiplication");
+    Console.WriteLine("4 - Division");
+    Console.WriteLine("5 - Exit");
+
+    Console.WriteLine("Input your choice:");
+    int choice = int.Parse(Console.ReadLine());
+
+    switch (choice)
+    {
+        case 1:
+            result = first + second;
+            Console.WriteLine($"Your result is: {result}");
+            break;
+
+
+        case 2:
+            result = first - second;
+            Console.WriteLine($"Your result is: {result}");
+            break;
+
+
+        case 3:
+            result = first * second;
+            Console.WriteLine($"Your result is: {result}");
+            break;
+
+        case 4:
+            result = first / second;
+            Console.WriteLine($"Your result is: {result}");
+            break;
+
+        case 5:
+
+            Console.WriteLine("THANKS FOR USE");
+            break;
+
+        default:
+            Console.WriteLine("INVALID CHOICE NUMBER!!!");
+            break;
+
+
+    }
+
+}
+catch
+{
+    Console.WriteLine("Please restart the program and enter integer number only");
 }
 
 
