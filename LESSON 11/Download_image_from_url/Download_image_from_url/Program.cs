@@ -16,7 +16,7 @@ class Program
         string myUrl = @"https://dog.ceo/api/breeds/image/random";
         Console.WriteLine("Getting process...");
 
-        for (i = 0; i < 10; i++) 
+        for (i = 0; i < 100; i++) 
         {
             string adress = @"C:\Users\Abdulov\Downloads\Dogs\" + Guid.NewGuid();
             HttpClient http = new HttpClient();
